@@ -1,0 +1,19 @@
+#include <math.h>
+#include <stdio.h>
+int main() {
+    int h,m;
+    scanf("%d",&h,&m);
+    if
+       (22<h<23&&0<m<59||1<h<3&&0<m<59)
+        printf("Good Night");
+    else if 
+        (12<h<15&&0<m<59)
+        printf("Good Afternoon");
+    else if
+        (16<h<20&&0<m<59)
+        printf("Good Evening");
+    else
+        printf("Good Night");
+        
+    return 0;
+}
