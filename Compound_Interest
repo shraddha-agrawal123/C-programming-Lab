@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float p,t,r,n,interest;
+    printf("Enter Principle amount \n");
+    scanf("%f",&p);
+    printf("Enter Time\n");
+    scanf("%f",&t);
+    printf("Enter Rate\n");
+    scanf("%f",&r);
+    printf("Enter number of times interset applied per time period\n");
+    scanf("%f",&n);
+    interest=p*pow((1+r/100),t);
+    printf("Compound interset is:\n%f",interest);
+return 0;
+}
