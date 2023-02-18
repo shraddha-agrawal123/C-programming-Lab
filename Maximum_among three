@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter first no.\n");
+    scanf("%d",&a);
+    printf("Enter Second no.\n");
+    scanf("%d",&b);
+    printf("Enter Third no.\n");
+    scanf("%d",&c);
+    a>b && a>c ?printf("A is maximum"): b>a  && b>c ?printf("B is maximum"): c>a && c>b ?printf("C is maximum"):printf("A,B,C are equal");
+
+    return 0;
+}
