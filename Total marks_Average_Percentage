@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float x,y,z,a,b,total,average,percentage;
+    printf("Enter number of first subject \n");
+    scanf("%f",&x);
+    printf("Enter  number of Second subject\n");
+    scanf("%f",&y);
+    printf("Enter  number of third subject\n");
+    scanf("%f",&z);
+    printf("Enter  number of fourth subject\n");
+    scanf("%f",&a);
+    printf("Enter  number of fifth subject\n");
+    scanf("%f",&b);
+    total=(x+y+z+a+b);
+    average=(x+y+z+a+b)/5;
+    percentage=(total/500)*100;
+    printf("Total is:\n%f",total);
+    printf("\nAverage is:\n%f",average);
+    printf("\nPercentage is:\n%f",percentage);
+    
+return 0;
+}
