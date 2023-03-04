@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+  
+  int a;
+  printf("Enter number");
+  scanf("%d",&a);
+  switch(a>0)
+  {
+      case 1:
+      printf(" %d Number is positive",a);
+      break;
+      case 0:
+      switch(a<0)
+      {
+        case 1:
+        printf("%d is negative number",a);
+        break;
+        case 0:
+        printf("Number is zero");
+        
+      }
+   
+  }
+  
+
+    return 0;
+}
