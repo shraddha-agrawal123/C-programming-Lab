@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+    int sum();
+    void isprime();
+    int isarmstrong();
+    int table();
+int main()
+{
+    int n;
+    printf("Enter 1 for sum\n enter 3 for prime number\n Enter 2 for armstrong\n Enter 4 for table\n Enter 5 for exit\n ");
+    scanf("%d",&n);
+    switch(n){
+        case 1:
+        int a,b;
+        printf("enter first number");
+        scanf("%d/n",&a);
+        printf("Enter second number");
+        scanf("%d",&b);
+        int k=sum(a,b);
+        printf("sum of two number is %d",k);
+        break;
+        case 2:
+        int c;
+        printf("enter number to check number is armstrong");
+        scanf("%d",&c);
+        if(isarmstrong(c)==0){
+            printf("Number is armstrong");
+        }
+        else if(isarmstrong(c)==1){
+            printf("Number is not an armstrong number");
+        }
+        break;
+        case 3:
+        int d;
+        printf("Enter number to check ");
+        scanf("%d",&d);
+        isprime(d);
+        break;
+        case 4:
+        int o;
+        printf("Enter number for printing  table");
+        table(o);
+        break;
+        case 5:
+        exit(1);
+        break;
+        default:
+        printf("choose correct from 1 to 5");
+    }
+    
+    return 0;
+}
+    int sum(int a,int b){
+        return(a+b);
+    }
+    int isarmstrong(int c){
+        int x,rem,res=0, count=0;
+        count=log10(c)+1;
+        while(c!=0){
+        x=c;
+        rem=c%10;
+        res=res+pow(rem,count);
+        c=c/10;
+    }
+    if(res == x) 
+    return 1;
+  else
+  return 0;
+}
+void isprime(int d){
+    int i,f=1;
+    for(i=2;i<=d/2;i++){
+        if(d%i==0){
+            f=0;
+            break;
+        }
+    }
+    if(f==1){
+    printf("%d is a prime number",d);
+}
+   else{
+    printf("%d is not a prime number",d);
+}
+}
+ int table (int e)
+ {
+        scanf("%d",&e);
+        for (int i=1;i<=10;i++){
+            printf("%d * %d = %d\n",e,i,e*i);
+        }
+      return 1;
+ }
